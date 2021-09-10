@@ -1,0 +1,96 @@
+// 米白
+$whilte: #c0c4c3;
+// 青灰
+$gray: #2b333e;
+// 金瓜黄
+$yellow: #fcd217;
+
+@font-face {
+  font-family: 'font-lcd';
+  src:url('~@/assets/fonts/font-lcd/lcd.eot');
+  src: url('~@/assets/fonts/font-lcd/lcd.eot?#iefix') format('embedded-opentype'),
+  url('~@/assets/fonts/font-lcd/lcd.woff') format('woff'),
+  url("~@/assets/fonts/font-lcd/lcd.ttf") format('truetype'),
+  url('~@/assets/fonts/font-lcd/lcd.svg#MicrosoftYaHei') format('svg');
+}
+
+// element scrollbar style
+.el-scrollbar{
+ .el-scrollbar__wrap {
+    // hidden X-axis scrollbar
+    overflow-x: hidden;
+  }
+  .el-scrollbar__thumb {
+    // scrollbar color
+    background: $yellow;
+  }
+}
+
+// elemenet message box
+.el-message-box {
+  background-color: $gray;
+  border-color: $gray;
+  font-family: 'font-lcd';
+
+  .el-message-box__title, .el-message-box__content {
+    color: $yellow;
+  }
+
+  .el-input__inner:focus {
+    border-color: $yellow;
+  }
+
+  .el-message-box__headerbtn:hover .el-message-box__close {
+    color: $yellow;
+  }
+
+  // message box button style
+  .el-button:focus, .el-button:hover {
+    color: $yellow;
+    border-color: #f8df70;
+    background-color: #fff;
+  }
+  .el-button--primary {
+    color: $gray;
+    background-color: $yellow;
+    border-color: $yellow;
+  
+    &:hover {
+      background-color: #f8df70;
+      border-color: #f8df70;
+      color: $gray;
+    }
+  }
+}
+
+// element message
+.el-message {
+  font-family: 'font-lcd';
+}
+
+// button style
+.el-button--mini {
+  min-height: 1px;
+  color: $yellow;
+  background-color: $gray;
+  border-color: $yellow;
+}
+.el-button--mini, .el-button--mini.is-round {
+  padding: 3px 4px;
+}
+.el-button:focus, .el-button:hover {
+  color: $gray;
+  border-color: #f8df70;
+  background-color: $yellow;
+  box-shadow: 0px 0px 5px #f8df70;
+}
+
+// login button
+.login-form {
+  .el-button:focus, .el-button:hover {
+    color: #fff;
+    border-color: #f8df70;
+    background-color: $yellow;
+    box-shadow: 0px 0px 5px #f8df70;
+  }
+}
